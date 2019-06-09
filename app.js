@@ -1,7 +1,7 @@
 var work = document.getElementsByClassName("work");
 var content = document.getElementsByClassName("content")[0];
 var links = document.getElementsByClassName("bring-link");
-
+var span = document.getElementsByClassName("hand");
 
 window.addEventListener('load',function(){
     work[0].classList.add('active');
@@ -26,45 +26,6 @@ function scaledown()
     content.style.transform = "scale(1)";
 }
 
-// var count = 1;
-
-// function changediv()
-// {   if(count==0)
-//     {
-//     document.getElementsByClassName("color-div")[0].style.height = "100%";
-//     document.getElementsByClassName("color-div")[0].style.width = "100%";
-//     document.getElementsByClassName("color-div")[0].style.margin = "0 0 0 0";
-//     document.getElementsByClassName("color-div")[0].style.borderRadius = "0";
-//     count++;
-//     setTimeout(function() 
-//     {
-//     document.getElementsByClassName("project-name")[0].style.color="white";
-//     },(300));
-//     setTimeout(function() 
-//     {
-//     document.getElementsByClassName("project-bio")[0].style.left = "50%";
-//     document.getElementsByClassName("project-bio")[0].style.opacity = "1";
-//     },(500));
-//     }
-//     else if(count==1)
-//     {
-//     document.getElementsByClassName("color-div")[0].style.height = "50px";
-//     document.getElementsByClassName("color-div")[0].style.width = "50px";
-//     document.getElementsByClassName("color-div")[0].style.marginTop = "24px";
-//     document.getElementsByClassName("color-div")[0].style.marginLeft = "85%";
-//     document.getElementsByClassName("color-div")[0].style.borderRadius = "50%";
-//     setTimeout(function() 
-//     {
-//     document.getElementsByClassName("project-name")[0].style.color="#c60f7b";
-//     },(300));
-//     setTimeout(function() 
-//     {
-//     document.getElementsByClassName("project-bio")[0].style.left = "-100vw";
-//     document.getElementsByClassName("project-bio")[0].style.opacity = "0";
-//     },(500));
-//     count--;   
-//     }
-// }
 
 function bringp2()
 {    if(document.getElementsByClassName("project-name")[0].innerHTML == "Project 2")
@@ -261,4 +222,33 @@ function bringp4()
 
 // **************************************-sidenav-*********************************//
 
+var isMenuOpen = 0;
 
+function navbar() {
+    if(isMenuOpen == 0)
+    {
+        for(var i = 0;i<3;i++)
+        {
+            document.getElementsByClassName("hand")[i].style.backgroundColor = "black";
+        }
+        document.getElementsByClassName("sidenav")[0].style.transform = "translateX(0vw)";
+        document.getElementsByClassName("hand")[0].style.transform = "rotate(45deg)";
+        document.getElementsByClassName("hand")[1].style.transform = "translateX(-80vw)";
+        document.getElementsByClassName("hand")[2].style.transform = "rotate(-45deg)";
+        document.body.style.overflow = "hidden";
+        isMenuOpen = 1;
+    }
+    else if (isMenuOpen == 1)
+    {
+        for(var i = 0;i<3;i++)
+        {
+            document.getElementsByClassName("hand")[i].style.backgroundColor = "white";
+        }
+        document.getElementsByClassName("sidenav")[0].style.transform = "translateX(-80vw)";
+        document.getElementsByClassName("hand")[0].style.transform = "translateY(-1vh) rotate(0deg)";
+        document.getElementsByClassName("hand")[1].style.transform = "translateX(0vw)";
+        document.getElementsByClassName("hand")[2].style.transform = "translateY(1vh) rotate(0deg)";
+        document.body.style.overflow = "scroll";
+        isMenuOpen = 0;
+    }
+}

@@ -1,0 +1,505 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #192024;
+}
+
+*
+{
+    transition: all 0.5s ease-in;
+}
+
+.navbar
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 50px;
+    box-sizing: border-box;
+    background: #0c0b0b;
+}
+
+.logo
+{
+    height: 60px;
+    width: 60px;
+    /* margin-top: 20px; */
+    background-image: url('src/logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    
+}
+
+.links
+{
+    width: 40%;
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0 0;
+}
+
+.links a
+{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    color:white;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.links a:hover
+{
+    opacity: 0.7;
+}
+
+.sec1
+{
+    height: 90vh;
+    width: 100vw;
+}
+
+.sec1 > .heading
+{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.sec1 > .heading > span
+{
+    color: white;
+    font-family: sans-serif;
+    font-size: 2em;
+    margin-top: -1vh;
+}
+
+.sec1 > .heading > p
+{
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    margin-top: -0.1px;
+}
+
+.sec1 > .heading > .vector-img
+{
+    width: 60%;
+    height: 70%;
+    background-image: url('src/vector.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+.sec1 > .intro-div
+{
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-flow: column; */
+}
+
+.sec1 > .intro-div > .work
+{
+    width: 30%;
+    height: 50%;
+    /* background-image: url('src/download.png'); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s ease-in-out;
+    
+}
+
+.work:nth-child(1)
+{
+    background-image: url('src/app2.png');
+    transform: translateY(20vh);
+    opacity: 0;
+    /* transition: all 0.5s ease-in-out; */
+}
+
+.work:nth-child(1).active 
+{
+opacity: 1;
+transform: translateY(0);
+}
+
+.work:nth-child(2)
+{
+    background-image: url('src/web.png');
+    transform: translateY(20vh);
+    opacity: 0;
+
+}
+
+.work:nth-child(2).active1 
+{
+opacity: 1;
+transform: translateY(0);
+}
+
+.work:nth-child(3)
+{
+    background-image: url('src/graphics.png');
+    transform: translateY(20vh);
+    opacity: 0;
+
+}
+
+.work:nth-child(3).active2
+{
+    opacity: 1;
+    transform: translateY(0); 
+}
+.sec2
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+.pic1
+{
+    width: 100%;
+    height: 50vh;
+    background-image: url('src/back.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.aboutus
+{
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus > .content
+{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    transition: all 2s ease-in;
+}
+
+.aboutus > .content > span
+{
+    color: #192024;
+    font-family: sans-serif;
+    font-size: 2em;
+}
+
+.aboutus > .content > p
+{
+    font-family: sans-serif;
+    text-align: center;
+    color: #0c0b0b;;
+}
+
+.sec3
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.sec3 > .projects-link
+{
+    height: 100%;
+    width: 50vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    z-index: 2;
+}
+
+.sec3 > .projects-link > span
+{
+    color: #c60f7b;
+    font-family: sans-serif;
+    font-size: 2em;
+}
+
+.sec3 > .projects-link > .project-box
+{
+    height: 30vh;
+    width: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+}
+
+.sec3 > .projects-link > .project-box a 
+{
+    color: #0c0b0b;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.sec3 > .projects-link > .project-box a:hover
+{
+    color: darkgrey;
+}
+
+.sec3 > .project-des
+{
+    height: 100%;
+    width: 50vw;
+    background-color: white;
+    position: relative;
+}
+
+.sec3 > .project-des > .color-div
+{
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  background-color: #FFCF4E;
+  margin: 0;
+  
+}
+
+.sec3 > .project-des > .project-name
+{
+    font-family: sans-serif;
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sec3 > .project-des > .project-bio
+{
+    width: 60%;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s ease-in-out;
+}
+
+.sec4
+{
+    width: 100vw;
+    height: 100vh;
+}
+.random-pic
+{
+    width: 100%;
+    height: 60vh;
+    background-image: url('src/clement-h-544786-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.footer
+{
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+}
+
+.footer > .su-logo
+{
+    height: 150px;
+    width: 150px;
+    background-image: url('src/download.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer > span
+{
+color: #192024;
+font-size: 1.5em;
+font-family: sans-serif;
+}
+
+
+
+
+@media(max-width:500px)
+{
+    .navbar
+    {
+        padding: 10px 10px;
+        background: #192024;
+        justify-content: center;
+    }
+
+    .links
+    {
+        display: none;
+    }
+
+    .sec1 > .heading > span
+    {
+        font-size: 1.5em;
+    }
+
+    .sec1 > .heading > p
+    {
+        font-size: 1.2em;
+
+    }
+
+    .sec1 > .intro-div
+    {
+        justify-content: space-evenly;
+    }
+
+    .sec1 > .intro-div > .work
+    {
+        width: 25%;
+        height: 40%;
+    }
+
+    .aboutus > .content > span
+    {
+        font-size: 1.5em;
+    }
+
+    .aboutus > .content > p
+    {
+        font-size: 0.7em;
+    }
+
+    .aboutus > .content
+    {
+        width: 85%;
+    }
+
+    .sec3
+    {
+        display: none;
+    }
+
+    .footer > .su-logo
+    {
+        height: 100px;
+        width: 100px;
+    }
+
+    .footer > span
+    {
+        font-size: 0.5em;
+    }
+
+    .footer
+    {
+        height: 30vh;
+    }
+
+    .random-pic
+    {
+        height: 70vh;
+    }
+
+    .hamburger
+    {
+        width: 30px;
+        height: auto;
+        position: absolute;
+        top: 3%;
+        left: 3%;
+    }
+    .hamburger > span
+    {
+     width: 100%;
+     height: 4px;
+     background-color: white;
+     position: absolute;
+     border-radius: 5px;
+     z-index: 8;
+     transition: all 0.5s ease-in-out;
+
+    }
+    .sidenav
+    {
+        height: 100%;
+        width: 80vw;
+        position: fixed;
+        background-color: white;
+        z-index: 7;
+        transform: translateX(-80vw);
+        transition: all 0.5s ease-in-out;
+
+    }
+}
+
+@media (max-width:400px)
+{
+    .sec1 > .heading > span
+    {
+        font-size: 1.2em;
+    }
+
+    .sec1 > .heading > p
+    {
+        font-size: 1em;
+
+    }
+
+    .logo
+    {
+        height: 40px;
+        width: 40px;
+    }
+
+    .sec1 > .intro-div > .work 
+    {
+        width: 20%;
+        height: 35%;
+    }
+
+    .aboutus > .content > span
+    {
+        font-size: 1.2em;
+    }
+
+    .aboutus > .content > p
+    {
+        font-size: 0.6em;
+    }
+}

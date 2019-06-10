@@ -757,6 +757,23 @@ font-family: sans-serif;
 
     .team-mobile
     {
-        height: 620vh;
+        height: 250vh;
+    }
+
+    .team-mobile > .mob-mem
+    {
+        height: 200px;
+        width: 150px;
+    }
+
+    .team-mobile > .mob-mem > .mob-pic
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-mobile > .mob-mem > span
+    {
+        font-size: 0.7em;
     }
 }

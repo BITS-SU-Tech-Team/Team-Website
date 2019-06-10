@@ -2,9 +2,11 @@ var work = document.getElementsByClassName("work");
 var content = document.getElementsByClassName("content")[0];
 var links = document.getElementsByClassName("bring-link");
 var span = document.getElementsByClassName("hand");
-
+document.body.style.overflow = "hidden";
 window.addEventListener('load',function(){
+    document.getElementsByClassName("loader-container")[0].style.display = "none";
     work[0].classList.add('active');
+    document.body.style.overflow = "scroll";
     setTimeout(function() {
     work[1].classList.add('active1');
     },(500));
@@ -267,12 +269,12 @@ function closenav()
 }
 
 
-window.addEventListener('load',function(){
-    document.getElementsByClassName("heading")[0].style.transform = "translateX(0)";
-    document.getElementsByClassName("honeycombs")[0].style.opacity = "1";
-    document.getElementsByClassName("heading")[0].style.opacity = "1";
-    document.getElementsByClassName("logo")[0].style.opacity = "1";
-    document.getElementsByClassName("footer")[0].style.opacity = "1";
-    })
+// window.addEventListener('load',function(){
+//     document.getElementsByClassName("heading")[0].style.transform = "translateX(0)";
+//     document.getElementsByClassName("honeycombs")[0].style.opacity = "1";
+//     document.getElementsByClassName("heading")[0].style.opacity = "1";
+//     document.getElementsByClassName("logo")[0].style.opacity = "1";
+//     document.getElementsByClassName("footer")[0].style.opacity = "1";
+//     })
 
 

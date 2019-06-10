@@ -265,3 +265,12 @@ function closenav()
     document.getElementsByClassName("hand")[2].style.transform = "translateY(1vh) rotate(0deg)";
     document.body.style.overflow = "scroll";  
 }
+
+
+window.addEventListener('load',function(){
+    document.getElementsByClassName("heading")[0].style.transform = "translateX(0)";
+    document.getElementsByClassName("honeycombs")[0].style.opacity = "1";
+    document.getElementsByClassName("heading")[0].style.opacity = "1";
+    document.getElementsByClassName("logo")[0].style.opacity = "1";
+    document.getElementsByClassName("footer")[0].style.opacity = "1";
+    })

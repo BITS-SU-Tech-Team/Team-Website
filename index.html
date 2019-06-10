@@ -1,382 +1,309 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>SU Tech Team.</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="src/logo.png">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="fontawesome/css/all.css" rel="stylesheet">    
-    </head>
-    <body>
-        <div class="hamburger" onclick="navbar()">
-            <span style="transform: translateY(-1vh)" class="hand"></span>
-            <span class="hand"></span>
-            <span style="transform: translateY(1vh)" class="hand"></span>
-        </div>
-        <div class="sidenav">
-        <div class="ham-links">
-            <a href="#about" onclick="closenav()">About</a>
-            <a href="#" onclick="closenav()">Projects</a>
-            <a href="#" onclick="closenav()">Timeline</a>
-            <a href="team.html">Our Team</a>
-        </div>
-        <div class="ham-logo"></div>
-        </div>
-        <div class="navbar">
-            <div class="logo"></div>
-            <div class="links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#">Timeline</a>
-                <a href="#team">Our Team</a>
-            </div>
-            
-        </div>
-        <div class="sec1">
-                <div class="heading">
-                    <span>Student's Union Tech Team</span>
-                    <p>Pilani, Rajhasthan</p>
-                    <div class="vector-img"></div>
-                </div>
-                <div class="intro-div">
-                    <div class="work"></div>
-                    <div class="work"></div>
-                    <div class="work"></div>
-                </div>
-            </div>
-            <div class="sec2">
-                <div class="pic1"></div>
-                <div class="aboutus" id="about">
-                    <div class="content" onmouseover="scaleup()" onmouseout="scaledown()">
-                        <span>About Us</span>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae culpa, in voluptatum, impedit dolore blanditiis aperiam sint porro quo iste cum quidem minus, ullam eaque non corporis nulla
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo provident ratione velit qui eum sunt. Velit voluptatem impedit ab provident illum, maiores voluptas! Autem consequatur perspiciatis sunt temporibus necessitatibus.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt hic doloribus quos, excepturi corrupti ea labore quam sapiente dolore sint praesentium? Exercitationem, cum nam. Alias saepe facilis accusamus aspernatur dicta?
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="sec3" id="projects">
-            <div class="projects-link">
-                <span>Our Achievments</span>
-                <div class="project-box">
-                    <a href="javascript:void(0);" onclick="bringp1()" class="bring-link">Project 1</a>
-                    <a href="javascript:void(0);" onclick="bringp2()" class="bring-link">Project 2</a>
-                    <a href="javascript:void(0);" onclick="bringp3()" class="bring-link">Project 3</a>
-                    <a href="javascript:void(0);" onclick="bringp4()" class="bring-link">Project 4</a>
-                </div>
-            </div>
-            <div class="project-des">
-                <div class="color-div"></div>
-                <div class="project-name">Project 1</div>
-                <div class="project-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo perferendis, voluptate mollitia harum aut ipsam suscipit consequuntur ad vero! Odio, dignissimos autem laborum corporis quia explicabo unde tempore quaerat nobis!</div>
-            </div>
-            </div>
-            <div class="team-sec">
-                <span>Team</span>
-               <div class="team1" id="team">
-                   <div class="member">
-                       <div class="pic"></div>
-                       <span>Abhishek Gaur</span>
-                       <span>Head</span>
-                       <div class="social-links">
-                            <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
-                            <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                       </div>
-                   </div>
-                   <div class="member">
-                        <div class="pic"></div>
-                        <span>Abhishek Gaur</span>
-                        <span>Head</span>
-                        <div class="social-links">
-                             <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
-                             <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                             <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="member">
-                            <div class="pic"></div>
-                            <span>Abhishek Gaur</span>
-                            <span>Head</span>
-                            <div class="social-links">
-                                 <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
-                                 <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                 <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                            </div>
-                        </div>
-                        <div class="member">
-                                <div class="pic"></div>
-                                <span>Abhishek Gaur</span>
-                                <span>Head</span>
-                                <div class="social-links">
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                </div>
-                            </div>
-                   
-                </div>
-                <div class="team2">
-                        <div class="member">
-                                <div class="pic"></div>
-                                <span>Abhishek Gaur</span>
-                                <span>Head</span>
-                                <div class="social-links">
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                </div>
-                            </div>
-                            <div class="member">
-                                    <div class="pic"></div>
-                                    <span>Abhishek Gaur</span>
-                                    <span>Head</span>
-                                    <div class="social-links">
-                                         <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
-                                         <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                         <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                    </div>
-                                </div>
-                                <div class="member">
-                                        <div class="pic"></div>
-                                        <span>Abhishek Gaur</span>
-                                        <span>Head</span>
-                                        <div class="social-links">
-                                             <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
-                                             <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                             <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                        </div>
-                                    </div>
-                                <div class="member">
-                                        <div class="pic"></div>
-                                        <span>Abhishek Gaur</span>
-                                        <span>Head</span>
-                                        <div class="social-links">
-                                            <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
-                                            <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                            <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                        </div>
-                                        </div>
-                                        <div class="member">
-                                                <div class="pic"></div>
-                                                <span>Abhishek Gaur</span>
-                                                <span>Head</span>
-                                                <div class="social-links">
-                                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
-                                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                                </div>
-                                        </div>
-                                             
-                </div> 
 
-                <div class="team3">
-                        <div class="member">
-                                <div class="pic"></div>
-                                <span>Abhishek Gaur</span>
-                                <span>Head</span>
-                                <div class="social-links">
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                </div>
-                        </div>
-                        <div class="member">
-                                <div class="pic"></div>
-                                <span>Abhishek Gaur</span>
-                                <span>Head</span>
-                                <div class="social-links">
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                </div>
-                        </div>
-                        <div class="member">
-                                <div class="pic"></div>
-                                <span>Abhishek Gaur</span>
-                                <span>Head</span>
-                                <div class="social-links">
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                </div>
-                        </div>
-                        <div class="member">
-                                <div class="pic"></div>
-                                <span>Abhishek Gaur</span>
-                                <span>Head</span>
-                                <div class="social-links">
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                </div>
-                        </div>
-                        <div class="member">
-                                <div class="pic"></div>
-                                <span>Abhishek Gaur</span>
-                                <span>Head</span>
-                                <div class="social-links">
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                     <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                </div>
-                        </div> 
-                </div>
-            </div>
-            <div class="team-mobile">
-                <div class="mob-mem">
-                    <div class="mob-pic"></div>
-                    <span>Abhishek Gaur</span>
-                    <span>Head</span>
-                    <div class="mob-links">
-                            <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
-                            <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                    </div>
-                </div>
-                <div class="mob-mem">
-                        <div class="mob-pic"></div>
-                        <span>Abhishek Gaur</span>
-                        <span>Head</span>
-                        <div class="mob-links">
-                                <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
-                                <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                        </div>
-                    </div>
-                <div class="mob-mem">
-                        <div class="mob-pic"></div>
-                            <span>Abhishek Gaur</span>
-                            <span>Head</span>
-                            <div class="mob-links">
-                                    <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
-                                    <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                    <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                            </div>
-                        </div>
-                        <div class="mob-mem">
-                                <div class="mob-pic"></div>
-                                <span>Abhishek Gaur</span>
-                                <span>Head</span>
-                                <div class="mob-links">
-                                        <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
-                                        <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                </div>
-                            </div>
-                            <div class="mob-mem">
-                                    <div class="mob-pic"></div>
-                                    <span>Abhishek Gaur</span>
-                                    <span>Head</span>
-                                    <div class="mob-links">
-                                            <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
-                                            <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                            <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                    </div>
-                                </div>
-                                <div class="mob-mem">
-                                        <div class="mob-pic"></div>
-                                        <span>Abhishek Gaur</span>
-                                        <span>Head</span>
-                                        <div class="mob-links">
-                                                <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
-                                                <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                                <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="mob-mem">
-                                            <div class="mob-pic"></div>
-                                            <span>Abhishek Gaur</span>
-                                            <span>Head</span>
-                                            <div class="mob-links">
-                                                    <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
-                                                    <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                                    <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="mob-mem">
-                                                <div class="mob-pic"></div>
-                                                <span>Abhishek Gaur</span>
-                                                <span>Head</span>
-                                                <div class="mob-links">
-                                                        <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
-                                                        <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                                        <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="mob-mem">
-                                                    <div class="mob-pic"></div>
-                                                    <span>Abhishek Gaur</span>
-                                                    <span>Head</span>
-                                                    <div class="mob-links">
-                                                            <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
-                                                            <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                                            <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                                    </div>
-                                                </div>
-                                                <div class="mob-mem">
-                                                        <div class="mob-pic"></div>
-                                                        <span>Abhishek Gaur</span>
-                                                        <span>Head</span>
-                                                        <div class="mob-links">
-                                                                <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
-                                                                <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                                                <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mob-mem">
-                                                            <div class="mob-pic"></div>
-                                                            <span>Abhishek Gaur</span>
-                                                            <span>Head</span>
-                                                            <div class="mob-links">
-                                                                    <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
-                                                                    <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                                                    <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mob-mem">
-                                                                <div class="mob-pic"></div>
-                                                                <span>Abhishek Gaur</span>
-                                                                <span>Head</span>
-                                                                <div class="mob-links">
-                                                                        <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
-                                                                        <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                                                        <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="mob-mem">
-                                                                    <div class="mob-pic"></div>
-                                                                    <span>Abhishek Gaur</span>
-                                                                    <span>Head</span>
-                                                                    <div class="mob-links">
-                                                                            <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
-                                                                            <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                                                            <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="mob-mem">
-                                                                        <div class="mob-pic"></div>
-                                                                        <span>Abhishek Gaur</span>
-                                                                        <span>Head</span>
-                                                                        <div class="mob-links">
-                                                                                <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
-                                                                                <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
-                                                                                <a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
-                                                                        </div>
-                                                                    </div>
-                
-            </div>
-            <div class="sec4">
-                <div class="random-pic"></div>
-                <div class="footer">
-                    <div class="su-logo" onclick="window.scrollTo(0, 0);"></div>
-                    <span>COPYRIGHT © | SU TECH TEAM 2019 | BITS PILANI, PILANI CAMPUS</span>
-                </div>
-            </div>
-        <script src="app.js"></script>
-      
-    </body>
-</html>
+<head>
+	<title>SU Tech Team.</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="src/logo.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="hamburger" onclick="navbar()"> <span style="transform: translateY(-1vh)" class="hand"></span>
+		<span class="hand"></span>
+		<span style="transform: translateY(1vh)" class="hand"></span>
+	</div>
+	<div class="sidenav">
+		<div class="ham-links"> <a href="#about" onclick="closenav()">About</a>
+			<a href="#" onclick="closenav()">Projects</a>
+			<a href="#" onclick="closenav()">Timeline</a>
+			<a href="team.html">Our Team</a>
+		</div>
+		<div class="ham-logo"></div>
+	</div>
+	<div class="navbar">
+		<div class="logo"></div>
+		<div class="links"> <a href="#about">About</a>
+			<a href="#projects">Projects</a>
+			<a href="#">Timeline</a>
+			<a href="#team">Our Team</a>
+		</div>
+	</div>
+	<div class="sec1">
+		<div class="heading"> <span>Student's Union Tech Team</span>
+			<p>Pilani, Rajhasthan</p>
+			<div class="vector-img"></div>
+		</div>
+		<div class="intro-div">
+			<div class="work"></div>
+			<div class="work"></div>
+			<div class="work"></div>
+		</div>
+	</div>
+	<div class="sec2">
+		<div class="pic1"></div>
+		<div class="aboutus" id="about">
+			<div class="content" onmouseover="scaleup()" onmouseout="scaledown()"> <span>About Us</span>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae culpa, in voluptatum, impedit dolore blanditiis aperiam sint porro quo iste cum quidem minus, ullam eaque non corporis nulla Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo provident ratione velit qui eum sunt. Velit voluptatem impedit ab provident illum, maiores voluptas! Autem consequatur perspiciatis sunt temporibus necessitatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt hic doloribus quos, excepturi corrupti ea labore quam sapiente dolore sint praesentium? Exercitationem, cum nam. Alias saepe facilis accusamus aspernatur dicta?</p>
+			</div>
+		</div>
+	</div>
+	<div class="sec3" id="projects">
+		<div class="projects-link"> <span>Our Achievments</span>
+			<div class="project-box"> <a href="javascript:void(0);" onclick="bringp1()" class="bring-link">Project 1</a>
+				<a href="javascript:void(0);" onclick="bringp2()" class="bring-link">Project 2</a>
+				<a href="javascript:void(0);" onclick="bringp3()" class="bring-link">Project 3</a>
+				<a href="javascript:void(0);" onclick="bringp4()" class="bring-link">Project 4</a>
+			</div>
+		</div>
+		<div class="project-des">
+			<div class="color-div"></div>
+			<div class="project-name">Project 1</div>
+			<div class="project-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo perferendis, voluptate mollitia harum aut ipsam suscipit consequuntur ad vero! Odio, dignissimos autem laborum corporis quia explicabo unde tempore quaerat nobis!</div>
+		</div>
+	</div>
+	<div class="team-sec"> <span>Team</span>
+		<div class="team1" id="team">
+			<div class="member">
+				<div class="pic"></div> <span>Abhishek Gaur</span>
+				<span>Head</span>
+				<div class="social-links"> <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+			<div class="member">
+				<div class="pic"></div> <span>Abhishek Gaur</span>
+				<span>Head</span>
+				<div class="social-links"> <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+			<div class="member">
+				<div class="pic"></div> <span>Abhishek Gaur</span>
+				<span>Head</span>
+				<div class="social-links"> <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+			<div class="member">
+				<div class="pic"></div> <span>Abhishek Gaur</span>
+				<span>Head</span>
+				<div class="social-links"> <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="team2">
+			<div class="member">
+				<div class="pic"></div> <span>Abhishek Gaur</span>
+				<span>Head</span>
+				<div class="social-links"> <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+			<div class="member">
+				<div class="pic"></div> <span>Abhishek Gaur</span>
+				<span>Head</span>
+				<div class="social-links"> <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+			<div class="member">
+				<div class="pic"></div> <span>Abhishek Gaur</span>
+				<span>Head</span>
+				<div class="social-links"> <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+			<div class="member">
+				<div class="pic"></div> <span>Abhishek Gaur</span>
+				<span>Head</span>
+				<div class="social-links"> <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+			<div class="member">
+				<div class="pic"></div> <span>Abhishek Gaur</span>
+				<span>Head</span>
+				<div class="social-links"> <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="team3">
+			<div class="member">
+				<div class="pic"></div> <span>Abhishek Gaur</span>
+				<span>Head</span>
+				<div class="social-links"> <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+			<div class="member">
+				<div class="pic"></div> <span>Abhishek Gaur</span>
+				<span>Head</span>
+				<div class="social-links"> <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+			<div class="member">
+				<div class="pic"></div> <span>Abhishek Gaur</span>
+				<span>Head</span>
+				<div class="social-links"> <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+			<div class="member">
+				<div class="pic"></div> <span>Abhishek Gaur</span>
+				<span>Head</span>
+				<div class="social-links"> <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+			<div class="member">
+				<div class="pic"></div> <span>Abhishek Gaur</span>
+				<span>Head</span>
+				<div class="social-links"> <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+					<a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="team-mobile">
+		<div class="mob-mem">
+			<div class="mob-pic"></div> <span>Abhishek Gaur</span>
+			<span>Head</span>
+			<div class="mob-links"> <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="mob-mem">
+			<div class="mob-pic"></div> <span>Abhishek Gaur</span>
+			<span>Head</span>
+			<div class="mob-links"> <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="mob-mem">
+			<div class="mob-pic"></div> <span>Abhishek Gaur</span>
+			<span>Head</span>
+			<div class="mob-links"> <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="mob-mem">
+			<div class="mob-pic"></div> <span>Abhishek Gaur</span>
+			<span>Head</span>
+			<div class="mob-links"> <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="mob-mem">
+			<div class="mob-pic"></div> <span>Abhishek Gaur</span>
+			<span>Head</span>
+			<div class="mob-links"> <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="mob-mem">
+			<div class="mob-pic"></div> <span>Abhishek Gaur</span>
+			<span>Head</span>
+			<div class="mob-links"> <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="mob-mem">
+			<div class="mob-pic"></div> <span>Abhishek Gaur</span>
+			<span>Head</span>
+			<div class="mob-links"> <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="mob-mem">
+			<div class="mob-pic"></div> <span>Abhishek Gaur</span>
+			<span>Head</span>
+			<div class="mob-links"> <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="mob-mem">
+			<div class="mob-pic"></div> <span>Abhishek Gaur</span>
+			<span>Head</span>
+			<div class="mob-links"> <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="mob-mem">
+			<div class="mob-pic"></div> <span>Abhishek Gaur</span>
+			<span>Head</span>
+			<div class="mob-links"> <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="mob-mem">
+			<div class="mob-pic"></div> <span>Abhishek Gaur</span>
+			<span>Head</span>
+			<div class="mob-links"> <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="mob-mem">
+			<div class="mob-pic"></div> <span>Abhishek Gaur</span>
+			<span>Head</span>
+			<div class="mob-links"> <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="mob-mem">
+			<div class="mob-pic"></div> <span>Abhishek Gaur</span>
+			<span>Head</span>
+			<div class="mob-links"> <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="mob-mem">
+			<div class="mob-pic"></div> <span>Abhishek Gaur</span>
+			<span>Head</span>
+			<div class="mob-links"> <a href="#" style="color: white;text-decoration:none;font-size:1em;"><i class="fab fa-github"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-linkedin"></i></a>
+				<a href="#" style="color: white;text-decoration:none;font-size:1em;margin-left: 2px;"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="sec4">
+		<div class="random-pic"></div>
+		<div class="footer">
+			<div class="su-logo" onclick="window.scrollTo(0, 0);"></div> <span>COPYRIGHT © | SU TECH TEAM 2019 | BITS PILANI, PILANI CAMPUS</span>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>

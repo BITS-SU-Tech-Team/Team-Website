@@ -274,3 +274,5 @@ window.addEventListener('load',function(){
     document.getElementsByClassName("logo")[0].style.opacity = "1";
     document.getElementsByClassName("footer")[0].style.opacity = "1";
     })
+
+

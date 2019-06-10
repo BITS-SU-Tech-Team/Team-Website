@@ -156,6 +156,17 @@
                               <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 1px;"><i class="fab fa-facebook-square"></i></a>
                             </span> 
                           </div>
+                          <div class="comb"> <img src="hexagon-layout/images/1.jpg" />
+                            <span>Abhisek Gaur
+                                <br>
+                                Head
+                                <br>
+                                <a href="#" style="color: white;text-decoration:none;font-size:1.5em;"><i class="fab fa-github"></i></a>
+                                <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 1px;"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" style="color: white;text-decoration:none;font-size:1.5em;margin-left: 1px;"><i class="fab fa-facebook-square"></i></a>
+                              </span> 
+                            </div>
+                            
                          
       </div>
       <span class="footer">COPYRIGHT © | SU TECH TEAM 2019 | BITS PILANI, PILANI CAMPUS</span>
@@ -164,12 +175,61 @@
   <script src="hexagon-layout/homeycombs/js/jquery.homeycombs.js"></script>
   <script src="app.js"></script>
   <script>
+    
+    if(window.innerWidth > 1400)
+    {
+    console.log(window.innerWidth)
     $(document).ready(function() {
     $('.honeycombs').honeycombs({
     combWidth: 200,
     margin: 9
     });
     });
-  </script>
+    }
+
+    else if (window.innerWidth <= 1300 && window.innerWidth > 1225)
+    {
+    console.log(window.innerWidth)
+    $(document).ready(function() {
+    $('.honeycombs').honeycombs({
+    combWidth: 170,
+    margin: 9
+    });
+    });
+    }
+
+    else if (window.innerWidth <= 1225 && window.innerWidth > 1089)
+    {
+    console.log(window.innerWidth)
+    $(document).ready(function() {
+    $('.honeycombs').honeycombs({
+    combWidth: 150,
+    margin: 9
+    });
+    });
+    }
+
+    else if (window.innerWidth <= 1089 && window.innerWidth > 1055)
+    {
+    console.log(window.innerWidth)
+    $(document).ready(function() {
+    $('.honeycombs').honeycombs({
+    combWidth: 145,
+    margin: 9
+    });
+    });
+    }
+
+    else if (window.innerWidth <= 1055 && Window.innerWidth > 985)
+    {
+    console.log(window.innerWidth)
+    $(document).ready(function() {
+    $('.honeycombs').honeycombs({
+    combWidth: 135,
+    margin: 9
+    });
+    });
+    }
+</script>
   </body>
 </html>

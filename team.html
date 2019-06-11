@@ -1,93 +1,175 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Projetcs.</title>
+    <title>Projects.</title>
     <link rel="stylesheet" href="team.css">
     <meta charset="UTF-8">
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   </head>
-  <body>
-      <div class="navbar">
-          <div class="logo time-pass"></div>
+  <body style="background-color: #192024;font-family: sans-serif;">
+      <div class="navbarx">
+          <div class="logo"></div>
           <a href="index.html" class="time-pass">Home</a>
       </div>
-      <div class="timeline">
-          <ul>
-           
-            <li>
-              <div class="right_content">
-                <h2>Sample Text</h2>
-                <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly
-                  journalistic styles, a paragraph can be just one sentence long.
-                </p>
-              </div>
-              <div class="left_content">
-                <h3>March 2019 </h3>
-              </div>
-            </li>
-            <li>
-              <div class="right_content">
-                <h2>Sample Text</h2>
-                <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly
-                  journalistic styles, a paragraph can be just one sentence long.
-                </p>
-              </div>
-              <div class="left_content">
-                <h3>April 2019 </h3>
-              </div>
-            </li>
-            <li>
-              <div class="right_content">
-                <h2>Sample Text</h2>
-                <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly
-                  journalistic styles, a paragraph can be just one sentence long.
-                </p>
-              </div>
-              <div class="left_content">
-                <h3>May 2019 </h3>
-              </div>
-            </li>
-            <li>
-              <div class="right_content">
-                <h2>Sample Text</h2>
-                <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly
-                  journalistic styles, a paragraph can be just one sentence long.
-                </p>
-              </div>
-              <div class="left_content">
-                <h3>June 2019 </h3>
-              </div>
-            </li>
-            <li>
-              <div class="right_content">
-                <h2>Sample Text</h2>
-                <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly
-                  journalistic styles, a paragraph can be just one sentence long.
-                </p>
-              </div>
-              <div class="left_content">
-                <h3>July 2019 </h3>
-              </div>
-            </li>
-            <li>
-              <div class="right_content">
-                <h2>Sample Text</h2>
-                <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly
-                  journalistic styles, a paragraph can be just one sentence long.
-                </p>
-              </div>
-              <div class="left_content">
-                <h3>August 2019 </h3>
-              </div>
-            </li>
-            <div style="clear:both;"></div>
-          </ul>
-        </div>
-        <script>
-          window.addEventListener('load',function(){
-          document.getElementsByClassName("logo")[0].style.opacity = "1";
-          document.getElementsByClassName("timeline")[0].style.opacity = "1";
-          })
-        </script>
+			<section class="timeline">
+					<div class="container">
+					  <div class="timeline-item">
+						<div class="timeline-img"></div>
+				  
+						<div class="timeline-content js--fadeInLeft">
+						  <h2>Title</h2>
+						  <div class="date">MAY 2019</div>
+						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+						</div>
+					  </div> 
+				  
+					    
+				  
+					  <div class="timeline-item">
+				  
+						<div class="timeline-img"></div>
+				  
+						<div class="timeline-content js--fadeInRight">
+								<h2>Title</h2>
+								<div class="date">MAY 2019</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+							  </div>
+					  </div>   
+				  
+					  <div class="timeline-item">
+				  
+						<div class="timeline-img"></div>
+				  
+						<div class="timeline-content js--fadeInLeft">
+						  <h2>Title</h2>
+						  <div class="date">JUN 2019</div>
+						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+						</div>
+					  </div>   
+				  
+					  <div class="timeline-item">
+				  
+						<div class="timeline-img"></div>
+				  
+						<div class="timeline-content js--fadeInRight">
+								<h2>Title</h2>
+								<div class="date">MAY 2019</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+						</div>
+					  </div>   
+				  
+					  <div class="timeline-item">
+				  
+						<div class="timeline-img"></div>
+				  
+						<div class="timeline-content js--fadeInLeft">
+								<h2>Title</h2>
+								<div class="date">MAY 2019</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+						</div>
+					  </div>  
+				  
+					  <div class="timeline-item">
+				  
+						<div class="timeline-img"></div>
+				  
+						<div class="timeline-content js--fadeInRight">
+								<h2>Title</h2>
+								<div class="date">MAY 2019</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+						</div>
+					  </div>   
+				  
+					  <div class="timeline-item">
+				  
+						<div class="timeline-img"></div>
+				  
+						<div class="timeline-content js--fadeInLeft">
+								<h2>Title</h2>
+								<div class="date">MAY 2019</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+						</div>
+					  </div>  
+				  
+					  <div class="timeline-item">
+				  
+						<div class="timeline-img"></div>
+				  
+						<div class="timeline-content js--fadeInRight">
+						  <div class="date">SEP 2019</div>
+						  <h2>Title</h2>
+						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+						</div>
+					  </div>   
+				  
+				  
+				  
+					</div>
+          </section>
+          <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+				  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+          <script>
+          
+              $(function(){
+  
+  window.sr = ScrollReveal();
+  
+  if ($(window).width() < 768) {
+  
+    if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+      $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+    }
+  
+    sr.reveal('.js--fadeInRight', {
+      origin: 'right',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+  
+  } else {
+    
+    sr.reveal('.js--fadeInLeft', {
+      origin: 'left',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+  
+    sr.reveal('.js--fadeInRight', {
+      origin: 'right',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+  
+  }
+  
+  sr.reveal('.js--fadeInLeft', {
+      origin: 'left',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+  
+    sr.reveal('.js--fadeInRight', {
+      origin: 'right',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+  
+  
+  });
+
+  window.addEventListener('load',function(){
+   
+    document.getElementsByClassName("logo")[0].style.opacity = "1";
+
+  })
+            </script>
   </body>
 </html>

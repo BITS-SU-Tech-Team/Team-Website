@@ -7,6 +7,7 @@ window.addEventListener('load',function(){
     document.getElementsByClassName("loader-container")[0].style.display = "none";
     work[0].classList.add('active');
     document.body.style.overflow = "scroll";
+    document.body.style.overflowX = "hidden";
     setTimeout(function() {
     work[1].classList.add('active1');
     window.scrollTo(0, 0);

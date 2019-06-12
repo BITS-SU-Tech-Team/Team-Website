@@ -2,12 +2,13 @@ var work = document.getElementsByClassName("work");
 var content = document.getElementsByClassName("content")[0];
 var links = document.getElementsByClassName("bring-link");
 var span = document.getElementsByClassName("hand");
-document.body.style.overflow = "hidden";
+document.body.style.overflowY = "hidden";
+document.body.style.overflowX = "hidden";
+
 window.addEventListener('load',function(){
     document.getElementsByClassName("loader-container")[0].style.display = "none";
     work[0].classList.add('active');
-    document.body.style.overflow = "scroll";
-    document.body.style.overflowX = "hidden";
+    document.body.style.overflowY = "scroll";
     setTimeout(function() {
     work[1].classList.add('active1');
     window.scrollTo(0, 0);
@@ -227,13 +228,15 @@ function bringp4()
 // **************************************-sidenav-*********************************//
 
 var isMenuOpen = 0;
+var isMenuOpen2 = 0;
+
 
 function navbar() {
     if(isMenuOpen == 0)
     {
         for(var i = 0;i<3;i++)
         {
-            document.getElementsByClassName("hand")[i].style.backgroundColor = "black";
+            document.getElementsByClassName("hand")[i].style.backgroundColor = "white";
         }
         document.getElementsByClassName("sidenav")[0].style.transform = "translateX(0vw)";
         document.getElementsByClassName("hand")[0].style.transform = "rotate(45deg)";
@@ -257,6 +260,43 @@ function navbar() {
     }
 }
 
+function navbarx() {
+    if(isMenuOpen2 == 0)
+    {
+        for(var i = 0;i<3;i++)
+        {
+            document.getElementsByClassName("handx")[i].style.backgroundColor = "black";
+        }
+        document.getElementsByClassName("sidenavx")[0].style.width = "100vw";
+        document.getElementsByClassName("sidenavx")[0].style.height = "100%";
+        document.getElementsByClassName("sidenavx")[0].style.opacity = "1";
+        document.getElementsByClassName("sidenavx")[0].style.borderRadius = "0";
+        document.getElementsByClassName("handx")[0].style.transform = "rotate(45deg)";
+        document.getElementsByClassName("handx")[1].style.opacity = "0";
+        document.getElementsByClassName("handx")[2].style.transform = "rotate(-45deg)";
+        document.body.style.overflow = "hidden";
+        isMenuOpen2 = 1;
+    }
+    else if (isMenuOpen2 == 1)
+    {
+        for(var i = 0;i<3;i++)
+        {
+            document.getElementsByClassName("handx")[i].style.backgroundColor = "white";
+        }
+        document.getElementsByClassName("sidenavx")[0].style.opacity = "0";
+        setTimeout(function(){
+            document.getElementsByClassName("sidenavx")[0].style.width = "750px";
+            document.getElementsByClassName("sidenavx")[0].style.height = "750px";
+            document.getElementsByClassName("sidenavx")[0].style.borderRadius = "50%";
+        },(500));
+        document.getElementsByClassName("handx")[0].style.transform = "translateY(-1vh) rotate(0deg)";
+        document.getElementsByClassName("handx")[1].style.opacity = "1";
+        document.getElementsByClassName("handx")[2].style.transform = "translateY(1vh) rotate(0deg)";
+        document.body.style.overflow = "scroll";
+        isMenuOpen2 = 0;
+    }
+}
+
 function closenav()
 {
     for(var i = 0;i<3;i++)
@@ -267,6 +307,24 @@ function closenav()
     document.getElementsByClassName("hand")[0].style.transform = "translateY(-1vh) rotate(0deg)";
     document.getElementsByClassName("hand")[1].style.transform = "translateX(0vw)";
     document.getElementsByClassName("hand")[2].style.transform = "translateY(1vh) rotate(0deg)";
+    document.body.style.overflow = "scroll";  
+}
+
+function closenavx()
+{
+    for(var i = 0;i<3;i++)
+    {
+        document.getElementsByClassName("handx")[i].style.backgroundColor = "white";
+    }
+    setTimeout(function(){
+        document.getElementsByClassName("sidenavx")[0].style.width = "750px";
+        document.getElementsByClassName("sidenavx")[0].style.height = "750px";
+        document.getElementsByClassName("sidenavx")[0].style.borderRadius = "50%";
+    },(500));
+    document.getElementsByClassName("sidenavx")[0].style.opacity = "0";
+    document.getElementsByClassName("handx")[0].style.transform = "translateY(-1vh) rotate(0deg)";
+    document.getElementsByClassName("handx")[1].style.opacity = "1";
+    document.getElementsByClassName("handx")[2].style.transform = "translateY(1vh) rotate(0deg)";
     document.body.style.overflow = "scroll";  
 }
 

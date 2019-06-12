@@ -23,6 +23,72 @@ body
   
 }
 
+.hamburgerx
+{
+    width: 30px;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    z-index: 10;
+}
+.hamburgerx > span
+{
+ width: 100%;
+ height: 4px;
+ background-color: white;
+ position: absolute;
+ border-radius: 5px;
+ z-index: 8;
+ transition: all 0.5s  ease-in-out;
+
+}
+.sidenavx
+{
+    height: 750px;
+    width: 750px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 7;
+    /* transform: translateX(-100vw); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+    transition: all 0.7s ease-in-out;
+    overflow: hidden;
+
+}
+
+.sidenavx > .ham-links
+{
+    height: 40%;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+    /* margin-top: 10vh; */
+}
+
+.sidenavx > .ham-links a
+{
+    color: #192024;
+    font-family: Helvetica;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.sidenavx > .ham-links a:hover
+{
+    transform: scale(1.1);
+}
+
 .navbar
 {
     width: 100%;
@@ -92,8 +158,8 @@ body
 {
     color: white;
     font-family: Aero;
-    font-size: 2em;
-    margin-top: -1vh;
+    font-size: 2.5em;
+    
 }
 
 .sec1 > .heading > p
@@ -215,6 +281,7 @@ transform: translateY(0);
     align-items: center;
     flex-flow: column;
     transition: all 2s ease-in;
+    z-index: 10;
 }
 
 .aboutus > .content > span
@@ -501,10 +568,27 @@ transform: scale(1.1);
 {
     height: 150px;
     width: 150px;
-    background-image: url('src/download.png');
+    background-image: url('src/logo.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    animation: float 6s ease-in-out infinite;
+    
+}
+
+@keyframes float {
+    0% 
+    {
+	transform: translateY(0px);
+	}
+    50% 
+    {
+	transform: translateY(-20px);
+	}
+    100% 
+    {
+    transform: translateY(0px);
+	}
 }
 
 .footer > span
@@ -519,20 +603,7 @@ font-family: Helvetica;
     display: none;
 }
 
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-}
+
 
 @media(max-width:1200px)
 {
@@ -592,7 +663,7 @@ font-family: Helvetica;
         justify-content: center;
     }
 
-    .links
+    .links,.hamburgerx,.sidenavx
     {
         display: none;
     }
@@ -684,7 +755,10 @@ font-family: Helvetica;
         height: 100%;
         width: 80vw;
         position: fixed;
-        background-color: white;
+        background-image: url("src/abstract-dark-halftone-background-design_1017-15505.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         z-index: 7;
         transform: translateX(-80vw);
         display: flex;
@@ -708,7 +782,7 @@ font-family: Helvetica;
 
     .sidenav > .ham-links a
     {
-        color: #192024;
+        color: white;
         font-family: Helvetica;
         font-size: 2em;
         text-decoration: none;

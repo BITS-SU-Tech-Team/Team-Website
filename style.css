@@ -887,4 +887,10 @@ font-family: Helvetica;
     {
         font-size: 0.7em;
     }
+
+    .footer > .su-logo
+    {
+        height: 80px;
+        width: 80px;
+    }
 }

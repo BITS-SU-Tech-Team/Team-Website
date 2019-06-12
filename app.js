@@ -202,7 +202,7 @@ function bringp4()
     },(600));
     setTimeout(function() 
     {
-    document.getElementsByClassName("color-div")[0].style.background = "#172331";
+    document.getElementsByClassName("color-div")[0].style.background = "#FF8C00";
     document.getElementsByClassName("project-name")[0].innerHTML = "Project 4";
     document.getElementsByClassName("project-name")[0].style.color="white";
     },(1000));

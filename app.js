@@ -242,7 +242,7 @@ function navbar() {
         document.getElementsByClassName("hand")[0].style.transform = "rotate(45deg)";
         document.getElementsByClassName("hand")[1].style.transform = "translateX(-80vw)";
         document.getElementsByClassName("hand")[2].style.transform = "rotate(-45deg)";
-        document.body.style.overflow = "hidden";
+        document.body.style.overflowY = "hidden";
         isMenuOpen = 1;
     }
     else if (isMenuOpen == 1)
@@ -255,7 +255,7 @@ function navbar() {
         document.getElementsByClassName("hand")[0].style.transform = "translateY(-1vh) rotate(0deg)";
         document.getElementsByClassName("hand")[1].style.transform = "translateX(0vw)";
         document.getElementsByClassName("hand")[2].style.transform = "translateY(1vh) rotate(0deg)";
-        document.body.style.overflow = "scroll";
+        document.body.style.overflowY = "scroll";
         isMenuOpen = 0;
     }
 }
@@ -274,7 +274,7 @@ function navbarx() {
         document.getElementsByClassName("handx")[0].style.transform = "rotate(45deg)";
         document.getElementsByClassName("handx")[1].style.opacity = "0";
         document.getElementsByClassName("handx")[2].style.transform = "rotate(-45deg)";
-        document.body.style.overflow = "hidden";
+        document.body.style.overflowY = "hidden";
         isMenuOpen2 = 1;
     }
     else if (isMenuOpen2 == 1)
@@ -292,7 +292,7 @@ function navbarx() {
         document.getElementsByClassName("handx")[0].style.transform = "translateY(-1vh) rotate(0deg)";
         document.getElementsByClassName("handx")[1].style.opacity = "1";
         document.getElementsByClassName("handx")[2].style.transform = "translateY(1vh) rotate(0deg)";
-        document.body.style.overflow = "scroll";
+        document.body.style.overflowY = "scroll";
         isMenuOpen2 = 0;
     }
 }

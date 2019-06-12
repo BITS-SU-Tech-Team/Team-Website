@@ -7,13 +7,15 @@ body
 {
     margin: 0;
     padding: 0;
-    background-color: #192024;
+    background-color: #182232 ;
 }
 
 *
 {
     transition: all 0.5s ease-in;
 }
+
+
 
 .navbar
 {
@@ -23,7 +25,7 @@ body
     align-items: flex-start;
     padding: 15px 50px;
     box-sizing: border-box;
-    background: #0c0b0b;
+    background: #111a2a;
 }
 
 .logo
@@ -61,6 +63,7 @@ body
 .links a:hover
 {
     opacity: 0.7;
+    transform: scale(1.1);
 }
 
 .sec1
@@ -447,6 +450,19 @@ transform: translateY(0);
     margin-bottom: 1vh;
 }
 
+.pic
+{
+    transition: all 0.5s ease-in-out;
+}
+
+.pic:nth-child(n):hover
+{
+transform: scale(1.1);
+}
+
+
+
+
 
 .sec4
 {
@@ -495,6 +511,21 @@ font-family: sans-serif;
 .sidenav,.team-mobile
 {
     display: none;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 
 @media(max-width:1200px)

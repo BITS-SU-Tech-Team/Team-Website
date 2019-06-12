@@ -202,7 +202,7 @@ function bringp4()
     },(600));
     setTimeout(function() 
     {
-    document.getElementsByClassName("color-div")[0].style.background = "#FF8C00";
+    document.getElementsByClassName("color-div")[0].style.background = "#172331";
     document.getElementsByClassName("project-name")[0].innerHTML = "Project 4";
     document.getElementsByClassName("project-name")[0].style.color="white";
     },(1000));
@@ -270,12 +270,17 @@ function closenav()
 }
 
 
-// window.addEventListener('load',function(){
-//     document.getElementsByClassName("heading")[0].style.transform = "translateX(0)";
-//     document.getElementsByClassName("honeycombs")[0].style.opacity = "1";
-//     document.getElementsByClassName("heading")[0].style.opacity = "1";
-//     document.getElementsByClassName("logo")[0].style.opacity = "1";
-//     document.getElementsByClassName("footer")[0].style.opacity = "1";
-//     })
+var pic = document.getElementsByClassName("pic");
+
+function liftup()
+{
+    pic[0].style.transform = "scale(1.1)";
+}
+
+function liftdown()
+{
+    pic[0].style.transform = "scale(1)";
+}
+
 
 

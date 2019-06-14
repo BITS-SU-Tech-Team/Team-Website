@@ -53,7 +53,10 @@ body
     transform: translate(-50%,-50%);
     opacity: 0;
     border-radius: 50%;
-    background-color: white;
+    background-image: url("src/10068-min.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: 7;
     /* transform: translateX(-100vw); */
     display: flex;
@@ -892,5 +895,21 @@ font-family: Helvetica;
     {
         height: 80px;
         width: 80px;
+    }
+}
+
+@media (max-width:380px) and (min-width:372px)
+{
+    .navbar
+    {
+        padding: 21px 10px;
+    }
+}
+
+@media (max-width:370px) and (min-width:358px)
+{
+    .navbar
+    {
+        padding: 12px 10px;
     }
 }

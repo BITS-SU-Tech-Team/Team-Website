@@ -238,7 +238,7 @@ function navbar() {
         {
             document.getElementsByClassName("hand")[i].style.backgroundColor = "white";
         }
-        document.getElementsByClassName("sidenav")[0].style.transform = "translateX(0vw)";
+        document.getElementsByClassName("sidenav")[0].style.transform = "translateY(0vh)";
         document.getElementsByClassName("hand")[0].style.transform = "rotate(45deg)";
         document.getElementsByClassName("hand")[1].style.transform = "translateX(-80vw)";
         document.getElementsByClassName("hand")[2].style.transform = "rotate(-45deg)";
@@ -251,7 +251,7 @@ function navbar() {
         {
             document.getElementsByClassName("hand")[i].style.backgroundColor = "white";
         }
-        document.getElementsByClassName("sidenav")[0].style.transform = "translateX(-80vw)";
+        document.getElementsByClassName("sidenav")[0].style.transform = "translateY(-100vh)";
         document.getElementsByClassName("hand")[0].style.transform = "translateY(-1vh) rotate(0deg)";
         document.getElementsByClassName("hand")[1].style.transform = "translateX(0vw)";
         document.getElementsByClassName("hand")[2].style.transform = "translateY(1vh) rotate(0deg)";

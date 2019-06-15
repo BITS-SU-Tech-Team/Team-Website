@@ -85,6 +85,7 @@ body
     font-family: Helvetica;
     font-size: 2em;
     text-decoration: none;
+    margin-top: 2vh;
 }
 
 .sidenavx > .ham-links a:hover
@@ -756,14 +757,14 @@ font-family: Helvetica;
     .sidenav
     {
         height: 100%;
-        width: 80vw;
+        width: 100vw;
         position: fixed;
         background-image: url("src/abstract-dark-halftone-background-design_1017-15505.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 7;
-        transform: translateX(-80vw);
+        transform: translateY(-100vh);
         display: flex;
         justify-content: space-evenly;
         align-items: center;

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recruitments.</title>
+        <link rel="stylesheet" href="rec.css">
+    </head>
+    <body>
+            <div class="hamburger" onclick="opennav()">
+                <span class="hand"></span>
+                <span class="hand"></span>
+                <span class="hand"></span>
+            </div>
+            <div class="midnav"></div>
+            <div class="navbar">
+                <div class="logo"></div>
+            </div>        
+            <div class="container"></div>
+        <span class="heading" onmouseover="blurin()">Join the team!</span>
+        <div class="team-sec">
+
+        </div>
+        <script>
+            var heading = document.getElementsByClassName("heading")[0];
+            var container = document.getElementsByClassName("container")[0];
+            function blurin()
+            {
+                container.style.filter = "blur(0px)";
+            }
+            var isnav = 0;
+            function opennav()
+            {   
+                console.log(1);
+                if(isnav == 0)
+                {
+                document.getElementsByClassName("hand")[0].style.transform = "translateY(0vh) rotate(45deg)";
+                document.getElementsByClassName("hand")[1].style.opacity = "0";
+                document.getElementsByClassName("hand")[2].style.transform = "translateY(0vh) rotate(-45deg)";
+                document.getElementsByClassName("midnav")[0].style.width = "100vw";
+                document.getElementsByClassName("midnav")[0].style.height = "100%";
+                document.getElementsByClassName("midnav")[0].style.height = "100%";
+                document.getElementsByClassName("midnav")[0].style.opacity = "1";
+                document.getElementsByClassName("midnav")[0].style.zIndex = "4";
+                document.getElementsByClassName("midnav")[0].style.borderRadius = "0";
+                document.body.style.overflowY = "hidden";
+                isnav = 1;
+                }
+                else if (isnav == 1)
+                {
+
+                document.getElementsByClassName("midnav")[0].style.opacity = "0";
+                setTimeout(function(){
+                document.getElementsByClassName("midnav")[0].style.width = "750px";
+                document.getElementsByClassName("midnav")[0].style.height = "750px";
+                document.getElementsByClassName("midnav")[0].style.borderRadius = "50%";
+                document.getElementsByClassName("midnav")[0].style.zIndex = "1";
+                },(500));
+                document.getElementsByClassName("hand")[0].style.transform = "translateY(-1vh) rotate(0deg)";
+                document.getElementsByClassName("hand")[1].style.opacity = "1";
+                document.getElementsByClassName("hand")[2].style.transform = "translateY(1vh) rotate(0deg)";
+                document.body.style.overflowY = "scroll";
+                isnav = 0;
+                }
+
+            }
+        </script>
+    </body>
+</html>

@@ -914,3 +914,30 @@ font-family: Helvetica;
         padding: 12px 10px;
     }
 }
+
+@media (max-width:1030px) and (min-width:1023px)
+{
+    .navbar
+    {
+        padding: 40px 50px;
+    }
+
+    .logo
+    {
+        width: 70px;
+        height: 70px;
+    }
+
+    .hamburgerx
+    {
+        position: absolute;
+        left: 91%;
+        width: 50px;
+    }
+    
+    .hamburgerx > span
+    {
+       height: 5px;
+    }
+    
+}

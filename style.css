@@ -25,6 +25,7 @@ body {
   position: absolute;
   top: 5%;
   left: 95%;
+  transform: translate(-50%, -50%);
   z-index: 10;
 }
 .hamburgerx > span {
@@ -281,6 +282,7 @@ body {
   color: #c60f7b;
   font-family: Helvetica;
   font-size: 2em;
+  margin-bottom: 4vh;
 }
 
 .sec3 > .projects-link > .project-box {
@@ -351,7 +353,7 @@ body {
 .team-sec > span {
   color: white;
   font-family: Helvetica;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-top: 3vh;
 }
 

@@ -319,7 +319,7 @@ function closenavx() {
   document.getElementsByClassName("handx")[1].style.opacity = "1";
   document.getElementsByClassName("handx")[2].style.transform =
     "translateY(1vh) rotate(0deg)";
-  document.body.style.overflow = "scroll";
+  document.body.style.overflowY = "scroll";
 }
 
 var pic = document.getElementsByClassName("pic");

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -186,6 +190,10 @@ body {
 .instructions {
   height: 100vh;
   width: 100%;
+  background-image: url("src/intr.jpeg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -194,7 +202,7 @@ body {
 
 .instructions > span {
   font-family: proximanova;
-  font-size: 2em;
+  font-size: 4em;
   color: #192024;
 }
 
@@ -208,19 +216,72 @@ body {
 }
 
 .instructions > a {
+  position: relative;
   font-size: 2em;
   color: white;
   text-decoration: none;
   font-family: proximanova2;
   background-color: #192024;
-  padding: 15px 20px;
-  border-radius: 10px;
+  padding: 20px 25px;
+  /* border-radius: 10px; */
   transition: all 0.3s ease-in-out;
 }
 
-.instructions > a:hover {
-  background-color: white;
+.instructions a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 0%;
+  content: "Tasks";
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #192024;
+  background: white;
+  /* border-radius: 10px; */
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.instructions > a:hover:after {
+  opacity: 1;
+  z-index: 1;
+  height: 100%;
+}
+
+.announcements {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+}
+
+.announcements > span {
+  font-family: proximanova;
+  font-size: 3em;
+  color: #192024;
+}
+
+.announcements > .inner-text {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
+}
+
+.footer {
+  height: 50vh;
+  width: 100%;
+  background-color: #182232;
 }
 
 @media (max-width: 750px) {
@@ -275,6 +336,19 @@ body {
   .midnav {
     display: none;
   }
+
+  .instructions > .text {
+    font-size: 1.1em;
+  }
+
+  .instructions > span {
+    font-size: 2em;
+  }
+
+  .instructions > a {
+    font-size: 1.7em;
+    padding: 10px 15px;
+  }
 }
 
 @media (max-width: 376px) {
@@ -293,5 +367,9 @@ body {
   .team-sec > .positions > .work > .pic {
     height: 100px;
     width: 100px;
+  }
+
+  .instructions > .text {
+    font-size: 0.9em;
   }
 }

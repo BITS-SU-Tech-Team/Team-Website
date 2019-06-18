@@ -15,10 +15,10 @@
     </div>
     <div class="midnav">
       <div class="mid-links">
-        <a href="#">Home</a>
-        <a href="#">Announcements</a>
-        <a href="#">Tasks</a>
-        <a href="#">Contact Us</a>
+        <a href="index.html" onclick="closenav()">Home</a>
+        <a href="#" onclick="closenav()">Announcements</a>
+        <a href="#inst" onclick="closenav()">Instructions</a>
+        <a href="#" onclick="closenav()">Contact Us</a>
       </div>
     </div>
     <div class="navbar">
@@ -71,7 +71,7 @@
         </div>
       </div>
     </div>
-    <div class="instructions">
+    <div class="instructions" id="inst">
       <span>Instructions</span>
       <div class="text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolorem
@@ -87,6 +87,11 @@
       </div>
       <a href="javascript:void(0);">Tasks</a>
     </div>
+    <div class="announcements">
+      <span>Announcements</span>
+      <div class="inner-text"></div>
+    </div>
+    <div class="footer"></div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script>
       var heading = document.getElementsByClassName("heading")[0];
@@ -156,6 +161,28 @@
 
       function scaledown(i) {
         pics[i].style.transform = "scale(1)";
+      }
+
+      function closenav() {
+        document.getElementsByClassName("midnav")[0].style.opacity = "0";
+        for (var i = 0; i < 3; i++) {
+          document.getElementsByClassName("hand")[i].style.backgroundColor =
+            "white";
+        }
+        setTimeout(function() {
+          document.getElementsByClassName("midnav")[0].style.width = "750px";
+          document.getElementsByClassName("midnav")[0].style.height = "750px";
+          document.getElementsByClassName("midnav")[0].style.borderRadius =
+            "50%";
+          document.getElementsByClassName("midnav")[0].style.zIndex = "1";
+        }, 500);
+        document.getElementsByClassName("hand")[0].style.transform =
+          "translateY(-1vh) rotate(0deg)";
+        document.getElementsByClassName("hand")[1].style.opacity = "1";
+        document.getElementsByClassName("hand")[2].style.transform =
+          "translateY(1vh) rotate(0deg)";
+        document.body.style.overflowY = "scroll";
+        isnav = 0;
       }
 
       window.addEventListener("load", function() {

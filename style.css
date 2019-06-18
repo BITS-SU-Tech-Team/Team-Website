@@ -10,6 +10,16 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: "proximanova";
+  src: url("fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Alt\ Bold.otf");
+}
+
+@font-face {
+  font-family: "proximanova2";
+  src: url("fonts/FontsFree-Net-proxima_nova_reg-webfont.ttf");
+}
+
 * {
   transition: all 0.5s ease-in;
 }
@@ -140,13 +150,13 @@ body {
 
 .sec1 > .heading > span {
   color: white;
-  font-family: Aero;
-  font-size: 2.5em;
+  font-family: proximanova;
+  font-size: 3em;
 }
 
 .sec1 > .heading > p {
   color: white;
-  font-family: Helvetica;
+  font-family: proximanova2;
   font-size: 1.4em;
   margin-top: -0.1px;
 }
@@ -251,12 +261,12 @@ body {
 
 .aboutus > .content > span {
   color: #192024;
-  font-family: Helvetica;
+  font-family: proximanova2;
   font-size: 2em;
 }
 
 .aboutus > .content > p {
-  font-family: Helvetica;
+  font-family: proximanova2;
   text-align: center;
   color: #0c0b0b;
 }
@@ -280,7 +290,7 @@ body {
 
 .sec3 > .projects-link > span {
   color: #c60f7b;
-  font-family: Helvetica;
+  font-family: proximanova2;
   font-size: 2em;
   margin-bottom: 4vh;
 }
@@ -321,7 +331,7 @@ body {
 }
 
 .sec3 > .project-des > .project-name {
-  font-family: Helvetica;
+  font-family: proximanova2;
   font-size: 2em;
   color: white;
   position: absolute;
@@ -332,7 +342,7 @@ body {
 
 .sec3 > .project-des > .project-bio {
   width: 60%;
-  font-family: Helvetica;
+  font-family: proximanova2;
   font-size: 1.5em;
   position: absolute;
   top: 50%;
@@ -352,7 +362,7 @@ body {
 
 .team-sec > span {
   color: white;
-  font-family: Helvetica;
+  font-family: proximanova2;
   font-size: 2.5em;
   margin-top: 3vh;
 }

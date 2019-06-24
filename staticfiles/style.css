@@ -1,0 +1,916 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #182232 ;
+    overflow-x: hidden;
+}
+
+*
+{
+    transition: all 0.5s ease-in;
+}
+
+@font-face 
+{
+    font-family: "Aero";
+    src: url("NeueHaasDisplay-Light.ttf");
+  
+}
+
+.hamburgerx
+{
+    width: 30px;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    z-index: 10;
+}
+.hamburgerx > span
+{
+ width: 100%;
+ height: 4px;
+ background-color: white;
+ position: absolute;
+ border-radius: 5px;
+ z-index: 8;
+ transition: all 0.5s  ease-in-out;
+
+}
+.sidenavx
+{
+    height: 750px;
+    width: 750px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    border-radius: 50%;
+    background-image: url("src/10068-min.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 7;
+    /* transform: translateX(-100vw); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+    transition: all 0.7s ease-in-out;
+    overflow: hidden;
+
+}
+
+.sidenavx > .ham-links
+{
+    height: 40%;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+    /* margin-top: 10vh; */
+}
+
+.sidenavx > .ham-links a
+{
+    color: #192024;
+    font-family: Helvetica;
+    font-size: 2em;
+    text-decoration: none;
+    margin-top: 2vh;
+}
+
+.sidenavx > .ham-links a:hover
+{
+    transform: scale(1.1);
+}
+
+.navbar
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 50px;
+    box-sizing: border-box;
+    background: #111a2a;
+}
+
+.logo
+{
+    height: 60px;
+    width: 60px;
+    /* margin-top: 20px; */
+    background-image: url('src/logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    
+}
+
+.links
+{
+    width: 40%;
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0 0;
+}
+
+.links a
+{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: Helvetica;
+    color:white;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.links a:hover
+{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+.sec1
+{
+    height: 90vh;
+    width: 100vw;
+}
+
+.sec1 > .heading
+{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.sec1 > .heading > span
+{
+    color: white;
+    font-family: Aero;
+    font-size: 2.5em;
+    
+}
+
+.sec1 > .heading > p
+{
+    color: white;
+    font-family: Helvetica;
+    font-size: 1.4em;
+    margin-top: -0.1px;
+}
+
+.sec1 > .heading > .vector-img
+{
+    width: 60%;
+    height: 70%;
+    background-image: url('src/vector.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+.sec1 > .intro-div
+{
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-flow: column; */
+}
+
+.sec1 > .intro-div > .work
+{
+    width: 30%;
+    height: 50%;
+    /* background-image: url('src/download.png'); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s ease-in-out;
+    
+}
+
+.work:nth-child(1)
+{
+    background-image: url('src/app2.png');
+    transform: translateY(20vh);
+    opacity: 0;
+    /* transition: all 0.5s ease-in-out; */
+}
+
+.work:nth-child(1).active 
+{
+opacity: 1;
+transform: translateY(0);
+}
+
+.work:nth-child(2)
+{
+    background-image: url('src/web.png');
+    transform: translateY(20vh);
+    opacity: 0;
+
+}
+
+.work:nth-child(2).active1 
+{
+opacity: 1;
+transform: translateY(0);
+}
+
+.work:nth-child(3)
+{
+    background-image: url('src/graphics.png');
+    transform: translateY(20vh);
+    opacity: 0;
+
+}
+
+.work:nth-child(3).active2
+{
+    opacity: 1;
+    transform: translateY(0); 
+}
+.sec2
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+.pic1
+{
+    width: 100%;
+    height: 50vh;
+    background-image: url('src/back.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.aboutus
+{
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus > .content
+{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    transition: all 2s ease-in;
+    z-index: 10;
+}
+
+.aboutus > .content > span
+{
+    color: #192024;
+    font-family: Helvetica;
+    font-size: 2em;
+}
+
+.aboutus > .content > p
+{
+    font-family: Helvetica;
+    text-align: center;
+    color: #0c0b0b;;
+}
+
+.sec3
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.sec3 > .projects-link
+{
+    height: 100%;
+    width: 50vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    z-index: 2;
+}
+
+.sec3 > .projects-link > span
+{
+    color: #c60f7b;
+    font-family: Helvetica;
+    font-size: 2em;
+}
+
+.sec3 > .projects-link > .project-box
+{
+    height: 30vh;
+    width: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+}
+
+.sec3 > .projects-link > .project-box a 
+{
+    color: #0c0b0b;
+    font-family: Helvetica;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.sec3 > .projects-link > .project-box a:hover
+{
+    color: darkgrey;
+}
+
+.sec3 > .project-des
+{
+    height: 100%;
+    width: 50vw;
+    background-color: white;
+    position: relative;
+}
+
+.sec3 > .project-des > .color-div
+{
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  background-color: #FFCF4E;
+  margin: 0;
+  
+}
+
+.sec3 > .project-des > .project-name
+{
+    font-family: Helvetica;
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sec3 > .project-des > .project-bio
+{
+    width: 60%;
+    font-family: Helvetica;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s ease-in-out;
+}
+
+.team-sec
+{
+    width: 100%;
+    height: 153vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+}
+
+.team-sec > span
+{
+    color: white;
+    font-family: Helvetica;
+    font-size: 2em;
+    margin-top: 3vh;
+}
+
+.team1
+{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team1 > .member
+{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.team-sec > .team1 > .member > .pic
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url("src/1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 2vh;
+}
+
+.team-sec > .team1 > .member > span
+{
+    font-family: Helvetica;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 1vh;
+}
+
+.team2
+{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team2 > .member
+{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.team-sec > .team2 > .member > .pic
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url("src/1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 2vh;
+}
+
+.team-sec > .team2 > .member > span
+{
+    font-family: Helvetica;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 1vh;
+}
+
+.team3
+{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team3 > .member
+{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.team-sec > .team3 > .member > .pic
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url("src/1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 2vh;
+}
+
+.team-sec > .team3 > .member > span
+{
+    font-family: Helvetica;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 1vh;
+}
+
+.pic
+{
+    transition: all 0.5s ease-in-out;
+}
+
+.pic:nth-child(n):hover
+{
+transform: scale(1.1);
+}
+
+
+
+
+
+.sec4
+{
+    width: 100vw;
+    height: 100vh;
+}
+.random-pic
+{
+    width: 100%;
+    height: 60vh;
+    background-image: url('src/clement-h-544786-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.footer
+{
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+}
+
+.footer > .su-logo
+{
+    height: 150px;
+    width: 150px;
+    background-image: url('src/logo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: float 6s ease-in-out infinite;
+    
+}
+
+@keyframes float {
+    0% 
+    {
+	transform: translateY(0px);
+	}
+    50% 
+    {
+	transform: translateY(-20px);
+	}
+    100% 
+    {
+    transform: translateY(0px);
+	}
+}
+
+.footer > span
+{
+color: #192024;
+font-size: 1.5em;
+font-family: Helvetica;
+}
+
+.sidenav,.team-mobile
+{
+    display: none;
+}
+
+
+
+@media(max-width:1200px)
+{
+    .team-sec
+    {
+        display: none;
+    }
+
+    .team-mobile
+    {
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+
+    .mob-mem
+    {
+     height: 250px;
+     width: 190px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column;
+     margin-left: 2vw; 
+   }
+
+   .mob-pic
+   {
+       width: 150px;
+       height: 150px;
+       border-radius: 50%;
+       background-image: url("src/1.jpg");
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       margin-bottom: 2vh;
+   }
+   .team-mobile > .mob-mem  > span
+{
+    font-family: Helvetica;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 1vh;
+}
+}
+
+@media(max-width:500px)
+{
+    .navbar
+    {
+        padding: 10px 10px;
+        background: #182232;
+        justify-content: center;
+    }
+
+    .links,.hamburgerx,.sidenavx
+    {
+        display: none;
+    }
+
+    .sec1 > .heading > span
+    {
+        font-size: 1.5em;
+    }
+
+    .sec1 > .heading > p
+    {
+        font-size: 1.2em;
+
+    }
+
+    .sec1 > .intro-div
+    {
+        justify-content: space-evenly;
+    }
+
+    .sec1 > .intro-div > .work
+    {
+        width: 25%;
+        height: 40%;
+    }
+
+    .aboutus > .content > span
+    {
+        font-size: 1.5em;
+    }
+
+    .aboutus > .content > p
+    {
+        font-size: 0.7em;
+    }
+
+    .aboutus > .content
+    {
+        width: 85%;
+    }
+
+    .sec3
+    {
+        display: none;
+    }
+
+    .footer > .su-logo
+    {
+        height: 100px;
+        width: 100px;
+    }
+
+    .footer > span
+    {
+        font-size: 0.5em;
+    }
+
+    .footer
+    {
+        height: 30vh;
+    }
+
+    .random-pic
+    {
+        height: 70vh;
+    }
+
+    .hamburger
+    {
+        width: 30px;
+        height: auto;
+        position: absolute;
+        top: 3%;
+        left: 3%;
+    }
+    .hamburger > span
+    {
+     width: 100%;
+     height: 4px;
+     background-color: white;
+     position: absolute;
+     border-radius: 5px;
+     z-index: 8;
+     transition: all 0.5s ease-in-out;
+
+    }
+    .sidenav
+    {
+        height: 100%;
+        width: 100vw;
+        position: fixed;
+        background-image: url("src/abstract-dark-halftone-background-design_1017-15505.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 7;
+        transform: translateY(-100vh);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: column;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    .sidenav > .ham-links
+    {
+        height: 40%;
+        width: 60%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: column;
+        /* margin-top: 10vh; */
+    }
+
+    .sidenav > .ham-links a
+    {
+        color: white;
+        font-family: Helvetica;
+        font-size: 2em;
+        text-decoration: none;
+    }
+
+    .sidenav > .ham-logo
+    {
+        width: 150px;
+        height: 150px;
+        background-image: url('src/download.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .team-mobile
+    {
+        height: 250vh;
+    }
+
+    .team-mobile > .mob-mem > .mob-pic
+    {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width:400px)
+{
+    .sec1 > .heading > span
+    {
+        font-size: 1.2em;
+    }
+
+    .sec1 > .heading > p
+    {
+        font-size: 1em;
+
+    }
+
+    .logo
+    {
+        height: 40px;
+        width: 40px;
+    }
+
+    .sec1 > .intro-div > .work 
+    {
+        width: 20%;
+        height: 35%;
+    }
+
+    .aboutus > .content > span
+    {
+        font-size: 1.2em;
+    }
+
+    .aboutus > .content > p
+    {
+        font-size: 0.6em;
+    }
+
+    .hamburger > span
+    {
+        height: 2.5px;
+    }
+
+    .hamburger
+    {
+        width: 22px;
+    }
+
+    .sidenav > .ham-links a 
+    {
+        font-size: 1.5em;
+    }
+
+    .sidenav > .ham-logo
+    {
+        width: 120px;
+        height: 120px;
+    }
+
+    .team-mobile
+    {
+        height: 280vh;
+    }
+
+    .team-mobile > .mob-mem
+    {
+        height: 200px;
+        width: 150px;
+    }
+
+    .team-mobile > .mob-mem > .mob-pic
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-mobile > .mob-mem > span
+    {
+        font-size: 0.7em;
+    }
+
+    .footer > .su-logo
+    {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media (max-width:380px) and (min-width:372px)
+{
+    .navbar
+    {
+        padding: 21px 10px;
+    }
+}
+
+@media (max-width:370px) and (min-width:358px)
+{
+    .navbar
+    {
+        padding: 12px 10px;
+    }
+}

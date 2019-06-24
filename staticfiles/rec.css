@@ -1,0 +1,165 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background: url("src/main-page.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+    filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading
+{
+    color: #192024;
+    font-size: 5em;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s ease-in-out;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.navbar
+{   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 50px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.logo
+{
+    height: 60px;
+    width: 60px;
+    /* margin-top: 20px; */
+    background-image: url('src/logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.hamburger
+{
+    width: 30px;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    z-index: 5;
+    transition: all 0.5s ease-in-out;
+}
+.hamburger > span
+{
+ width: 100%;
+ height: 4px;
+ background-color: #192024;
+ position: absolute;
+ border-radius: 5px;
+ z-index: 2;
+ transition: all 0.5s  ease-in-out;
+}
+
+.hand:nth-child(1)
+{
+    transform: translateY(-1vh);
+}
+
+.hand:nth-child(3)
+{
+    transform: translateY(1vh);
+}
+
+.midnav
+{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    opacity: 0; 
+    transition: all 0.5s ease-in-out;
+}
+
+.team-sec
+{
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.team-sec > span
+{
+    font-size: 2em;
+    color: #192024;
+    font-family: sans-serif;
+}
+
+.team-sec > .positions
+{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.team-sec > .positions > .work
+{
+    width: 20%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+}
+
+.team-sec > .positions > .work > .pic
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.team-sec > .positions > .work > span
+{
+    font-family: sans-serif;
+    color: #192024;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+

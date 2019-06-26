@@ -130,6 +130,7 @@ p {
   font-size: 1.2em;
   color: black;
 }
+
 .timeline-content::after {
   content: "";
   position: absolute;

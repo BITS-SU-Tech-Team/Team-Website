@@ -501,7 +501,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-flow: column;
 }
 
 .footer > .su-logo {
@@ -526,10 +525,21 @@ body {
   }
 }
 
-.footer > span {
-  color: #192024;
+.footer > .footer-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-flow: column;
+}
+
+.footer > .footer-text > span {
+  font-family: proximanova2;
   font-size: 1.5em;
-  font-family: Helvetica;
+  color: #192024;
+}
+
+.footer > .footer-text > .copy-right {
+  font-size: 0.7em;
 }
 
 .sidenav,

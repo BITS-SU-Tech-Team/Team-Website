@@ -163,7 +163,7 @@ body {
 
 .sec1 > .heading > .vector-img {
   width: 60%;
-  height: 70%;
+  height: 80%;
   background-image: url("src/SU\ \ Tech\ Team\ Logo\ wihtout\ text.png");
   background-position: center;
   background-size: contain;
@@ -719,6 +719,25 @@ body {
     width: 100px;
     height: 100px;
   }
+
+  .footer > .su-logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .footer > .footer-text > span {
+    font-family: proximanova2;
+    font-size: 0.7em;
+    color: #192024;
+  }
+
+  .footer > .footer-text > .footer-social > .font-text {
+    font-size: 1em;
+  }
+
+  .footer > .footer-text > .copy-right {
+    font-size: 0.5em;
+  }
 }
 
 @media (max-width: 400px) {
@@ -786,6 +805,25 @@ body {
   .footer > .su-logo {
     height: 80px;
     width: 80px;
+  }
+
+  .footer > .su-logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .footer > .footer-text > span {
+    font-family: proximanova2;
+    font-size: 0.5em;
+    color: #192024;
+  }
+
+  .footer > .footer-text > .footer-social > .font-text {
+    font-size: 1em;
+  }
+
+  .footer > .footer-text > .copy-right {
+    font-size: 0.3em;
   }
 }
 

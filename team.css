@@ -5,6 +5,10 @@ body {
   background-color: #182232;
   margin: 0;
   padding: 0;
+  /* background-image: url("src/timeline.jpeg"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .logo {

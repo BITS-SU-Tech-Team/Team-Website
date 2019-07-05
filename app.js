@@ -11,7 +11,6 @@ window.addEventListener("load", function() {
   document.body.style.overflowY = "scroll";
   setTimeout(function() {
     work[1].classList.add("active1");
-    window.scrollTo(0, 0);
   }, 500);
   setTimeout(function() {
     work[2].classList.add("active2");

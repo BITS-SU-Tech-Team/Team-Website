@@ -284,15 +284,50 @@ body {
   height: 50vh;
   width: 100%;
   background-color: #182232;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-@media (max-width: 750px) {
+.footer > .su-logo {
+  height: 150px;
+  width: 150px;
+  background-image: url("src/logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* animation: float 6s ease-in-out infinite; */
+}
+
+.footer > .footer-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-flow: column;
+}
+
+.footer > .footer-text > span {
+  font-family: proximanova2;
+  font-size: 1.5em;
+  color: white;
+}
+
+.footer > .footer-text > .copy-right {
+  font-size: 0.7em;
+}
+
+.footer > .footer-text > .footer-social a {
+  font-size: 3em;
+}
+
+@media (max-width: 600px) {
   .container {
     filter: blur(0px);
   }
 
   .navbar {
     padding: 10px 10px;
+    justify-content: center;
   }
   .heading {
     font-size: 2em;
@@ -351,6 +386,35 @@ body {
     font-size: 1.7em;
     padding: 10px 15px;
   }
+
+  .footer > .su-logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .footer > .footer-text > span {
+    font-family: proximanova2;
+    font-size: 0.7em;
+    color: white;
+  }
+
+  .footer > .footer-text > .footer-social > .font-text {
+    font-size: 1em;
+  }
+
+  .footer > .footer-text > .copy-right {
+    font-size: 0.5em;
+  }
+
+  .footer > .footer-text > .footer-social a {
+    font-size: 1em;
+  }
+
+  .announcements > span {
+    font-family: proximanova;
+    font-size: 2em;
+    color: #192024;
+  }
 }
 
 @media (max-width: 376px) {
@@ -373,5 +437,24 @@ body {
 
   .instructions > .text {
     font-size: 0.9em;
+  }
+
+  .footer > .su-logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .footer > .footer-text > span {
+    font-family: proximanova2;
+    font-size: 0.5em;
+    color: white;
+  }
+
+  .footer > .footer-text > .footer-social > .font-text {
+    font-size: 1em;
+  }
+
+  .footer > .footer-text > .copy-right {
+    font-size: 0.3em;
   }
 }

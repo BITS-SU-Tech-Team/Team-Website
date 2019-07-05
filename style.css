@@ -29,6 +29,11 @@ body {
   src: url("NeueHaasDisplay-Light.ttf");
 }
 
+@font-face {
+  font-family: "Jose";
+  src: url("./JosefinSans-Bold.ttf");
+}
+
 .hamburgerx {
   width: 30px;
   height: auto;
@@ -150,7 +155,8 @@ body {
 
 .sec1 > .heading > span {
   color: white;
-  font-family: proximanova;
+  font-family: Jose;
+  margin-top: 2vh;
   font-size: 3em;
 }
 
@@ -158,7 +164,7 @@ body {
   color: white;
   font-family: proximanova2;
   font-size: 1.4em;
-  margin-top: -0.1px;
+  /* margin-top: -0.1px; */
 }
 
 .sec1 > .heading > .vector-img {
@@ -259,6 +265,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("src/aboutus.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .aboutus > .content {
@@ -543,6 +553,10 @@ body {
   font-size: 0.7em;
 }
 
+.footer > .footer-text > .footer-social a {
+  font-size: 3em;
+}
+
 .sidenav,
 .team-mobile {
   display: none;
@@ -706,7 +720,7 @@ body {
   .sidenav > .ham-logo {
     width: 150px;
     height: 150px;
-    background-image: url("src/download.png");
+    background-image: url("src/SU\ \ Tech\ Team\ Logo\ wihtout\ text.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

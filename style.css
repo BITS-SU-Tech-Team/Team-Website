@@ -527,9 +527,9 @@ body {
 }
 
 .footer > .su-logo {
-  height: 150px;
-  width: 150px;
-  background-image: url("src/SU\ \ Tech\ Team\ Logo\ wihtout\ text.png");
+  height: 250px;
+  width: 250px;
+  background-image: url("src/LOGO\ PNG.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -746,8 +746,8 @@ body {
   }
 
   .footer > .su-logo {
-    height: 50px;
-    width: 50px;
+    height: 120px;
+    width: 120px;
   }
 
   .footer > .footer-text {
@@ -837,8 +837,8 @@ body {
   }
 
   .footer > .su-logo {
-    height: 40px;
-    width: 40px;
+    height: 80px;
+    width: 80px;
   }
 
   .footer > .footer-text > span {

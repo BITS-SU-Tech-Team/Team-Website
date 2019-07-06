@@ -104,12 +104,11 @@ body {
   align-items: flex-start;
   padding: 15px 50px;
   box-sizing: border-box;
-  background: #111a2a;
 }
 
 .logo {
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
   /* margin-top: 20px; */
   background-image: url("src/logo.png");
   background-position: center;
@@ -158,12 +157,13 @@ body {
   font-family: Jose;
   margin-top: 2vh;
   font-size: 3em;
+  text-transform: uppercase;
 }
 
 .sec1 > .heading > p {
   color: white;
   font-family: proximanova2;
-  font-size: 1.4em;
+  font-size: 1.6em;
   /* margin-top: -0.1px; */
 }
 
@@ -554,7 +554,7 @@ body {
 }
 
 .footer > .footer-text > .footer-social a {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .sidenav,
@@ -605,6 +605,11 @@ body {
 }
 
 @media (max-width: 500px) {
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+
   .navbar {
     padding: 10px 10px;
     background: #182232;
@@ -618,7 +623,7 @@ body {
   }
 
   .sec1 > .heading > span {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .sec1 > .heading > p {
@@ -659,12 +664,16 @@ body {
     font-size: 0.5em;
   }
 
+  .sec4 {
+    height: 80vh;
+  }
+
   .footer {
     height: 30vh;
   }
 
   .random-pic {
-    height: 70vh;
+    height: 50vh;
   }
 
   .hamburger {
@@ -757,7 +766,7 @@ body {
 
 @media (max-width: 400px) {
   .sec1 > .heading > span {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .sec1 > .heading > p {

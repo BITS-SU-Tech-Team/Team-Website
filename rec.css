@@ -61,8 +61,8 @@ body {
 }
 
 .logo {
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
   /* margin-top: 20px; */
   background-image: url("src/logo.png");
   background-position: center;
@@ -320,6 +320,10 @@ body {
   font-size: 2em;
 }
 
+.sidenavx {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .container {
     filter: blur(0px);
@@ -365,8 +369,8 @@ body {
   }
 
   .navbar > .logo {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
   }
 
   .hamburger,
@@ -392,8 +396,8 @@ body {
   }
 
   .footer > .su-logo {
-    height: 80px;
-    width: 80px;
+    height: 120px;
+    width: 120px;
   }
 
   .footer > .footer-text {
@@ -424,7 +428,23 @@ body {
     color: #192024;
   }
 
-  .sidenav {
+  .hamburgerx {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+  }
+  .hamburgerx > span {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 8;
+    transition: all 0.5s ease-in-out;
+  }
+  .sidenavx {
     height: 100%;
     width: 100vw;
     position: fixed;
@@ -441,7 +461,7 @@ body {
     transition: all 0.5s ease-in-out;
   }
 
-  .sidenav > .ham-links {
+  .sidenavx > .ham-linksx {
     height: 40%;
     width: 60%;
     display: flex;
@@ -451,14 +471,14 @@ body {
     /* margin-top: 10vh; */
   }
 
-  .sidenav > .ham-links a {
+  .sidenavx > .ham-linksx a {
     color: white;
     font-family: Helvetica;
     font-size: 2em;
     text-decoration: none;
   }
 
-  .sidenav > .ham-logo {
+  .sidenavx > .ham-logox {
     width: 150px;
     height: 150px;
     background-image: url("src/SU\ \ Tech\ Team\ Logo\ wihtout\ text.png");
@@ -471,6 +491,11 @@ body {
 @media (max-width: 376px) {
   .heading {
     font-size: 1.8em;
+  }
+
+  .navbar > .logo {
+    height: 40px;
+    width: 40px;
   }
 
   .team-sec > span {
@@ -507,5 +532,22 @@ body {
 
   .footer > .footer-text > .copy-right {
     font-size: 0.3em;
+  }
+
+  .hamburgerx > span {
+    height: 2.5px;
+  }
+
+  .hamburgerx {
+    width: 22px;
+  }
+
+  .sidenavx > .ham-linksx a {
+    font-size: 1.5em;
+  }
+
+  .sidenavx > .ham-logox {
+    width: 120px;
+    height: 120px;
   }
 }

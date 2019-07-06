@@ -10,6 +10,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   transition: all 0.5s ease-in-out;
+  overflow-x: hidden;
 }
 
 .hamburger {
@@ -80,8 +81,8 @@ body {
 }
 
 .logo {
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
   background-image: url("src/logo.png");
   background-position: center;
   background-size: contain;
@@ -158,6 +159,7 @@ header p {
 
 .timeline {
   position: relative;
+  width: 100%;
 }
 .timeline::before {
   content: "";
@@ -275,6 +277,10 @@ blockquote {
   transform: translate(-50%, -50%);
 }
 
+.sidenavx {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .timeline::before {
     left: 50px;
@@ -304,6 +310,7 @@ blockquote {
   .navbarx {
     padding: 10px 25px;
     background: #182232;
+    justify-content: center;
   }
 
   .bottom-text {
@@ -311,6 +318,75 @@ blockquote {
     text-align: center;
     font-size: 0.7em;
     color: white;
+  }
+
+  .hamburger,
+  .midnav {
+    display: none;
+  }
+
+  .hamburgerx {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+  }
+  .hamburgerx > span {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 8;
+    transition: all 0.5s ease-in-out;
+  }
+  .sidenavx {
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    background-image: url("src/abstract-dark-halftone-background-design_1017-15505.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 7;
+    transform: translateY(-100vh);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .sidenavx > .ham-linksx {
+    height: 40%;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+    /* margin-top: 10vh; */
+  }
+
+  .sidenavx > .ham-linksx a {
+    color: white;
+    font-family: Helvetica;
+    font-size: 2em;
+    text-decoration: none;
+  }
+
+  .sidenavx > .ham-logox {
+    width: 150px;
+    height: 150px;
+    background-image: url("src/SU\ \ Tech\ Team\ Logo\ wihtout\ text.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -342,6 +418,23 @@ blockquote {
 
   .bottom-text {
     font-size: 0.5em;
+  }
+
+  .hamburgerx > span {
+    height: 2.5px;
+  }
+
+  .hamburgerx {
+    width: 22px;
+  }
+
+  .sidenavx > .ham-linksx a {
+    font-size: 1.5em;
+  }
+
+  .sidenavx > .ham-logox {
+    width: 120px;
+    height: 120px;
   }
 }
 

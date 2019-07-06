@@ -669,11 +669,12 @@ body {
   }
 
   .footer {
-    height: 30vh;
+    height: 40vh;
+    flex-flow: column;
   }
 
   .random-pic {
-    height: 50vh;
+    height: 40vh;
   }
 
   .hamburger {
@@ -747,6 +748,10 @@ body {
   .footer > .su-logo {
     height: 50px;
     width: 50px;
+  }
+
+  .footer > .footer-text {
+    align-items: center;
   }
 
   .footer > .footer-text > span {

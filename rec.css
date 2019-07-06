@@ -317,7 +317,7 @@ body {
 }
 
 .footer > .footer-text > .footer-social a {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 @media (max-width: 600px) {
@@ -387,9 +387,17 @@ body {
     padding: 10px 15px;
   }
 
+  .footer {
+    flex-flow: column;
+  }
+
   .footer > .su-logo {
     height: 50px;
     width: 50px;
+  }
+
+  .footer > .footer-text {
+    align-items: center;
   }
 
   .footer > .footer-text > span {

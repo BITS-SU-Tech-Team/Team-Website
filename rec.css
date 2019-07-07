@@ -290,9 +290,9 @@ body {
 }
 
 .footer > .su-logo {
-  height: 150px;
-  width: 150px;
-  background-image: url("src/LOGO\ PNG.png");
+  height: 300px;
+  width: 300px;
+  background-image: url("src/SU\ \ Tech\ Team\ Logo\ with\ white\ text.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -516,8 +516,8 @@ body {
   }
 
   .footer > .su-logo {
-    height: 60px;
-    width: 60px;
+    height: 90px;
+    width: 90px;
   }
 
   .footer > .footer-text > span {

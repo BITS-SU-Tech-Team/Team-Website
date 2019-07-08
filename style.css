@@ -411,7 +411,7 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-image: url("src/1.jpg");
+  /* background-image: url("src/AbhishekGaur.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -446,7 +446,7 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-image: url("src/1.jpg");
+  /* background-image: url("src/1.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -481,7 +481,7 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-image: url("src/1.jpg");
+  /* background-image: url("src/1.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -590,7 +590,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-image: url("src/1.jpg");
+    /* background-image: url("src/1.jpg"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

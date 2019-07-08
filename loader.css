@@ -22,7 +22,7 @@
   stroke-dasharray: 1065px;
   stroke-dashoffset: 1065px;
   /* transition: all 0.5s cubic-bezier(0.63, 0.42, 0.79, 0.73); */
-  animation: path0-anim 4s infinite;
+  animation: path0-anim 3s infinite;
   animation-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
@@ -30,7 +30,7 @@
   stroke-dasharray: 1065px;
   stroke-dashoffset: 1065px;
   /* transition: all 0.5s cubic-bezier(0.63, 0.42, 0.79, 0.73); */
-  animation: path1-anim 4s infinite;
+  animation: path1-anim 3s infinite;
   animation-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
@@ -38,7 +38,7 @@
   stroke-dasharray: 1065px;
   stroke-dashoffset: 1065px;
   /* transition: all 0.5s cubic-bezier(0.63, 0.42, 0.79, 0.73); */
-  animation: path1-anim 4s infinite;
+  animation: path1-anim 3s infinite;
   animation-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 

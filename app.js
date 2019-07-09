@@ -322,17 +322,20 @@ function closenavx() {
 }
 
 var pic = document.getElementsByClassName("pic");
-var mob_pic = document.getElementsByClassName("mob-pic")
-let pic_array = ["AbhishekGaur.jpg", "MokshGarg.jpg", "NayanKhanna.jpg", "RohitKBhardwaj.jpg"];
+var mob_pic = document.getElementsByClassName("mob-pic");
+let pic_array = [
+  "AbhishekGaur.jpg",
+  "MokshGarg.jpg",
+  "NayanKhanna.jpg",
+  "RohitKBhardwaj.jpg"
+];
 
 let i = 0;
-while(pic[i] != null) {
-  pic[i].style.backgroundImage = "url('src/"+pic_array[i]+"')";
-  pic[i].style.width = "150px";
-  pic[i].style.height = "150px";
-  mob_pic[i].style.backgroundImage = "url('src/"+pic_array[i]+"')";
-  mob_pic[i].style.width = "150px";
-  mob_pic[i].style.height = "150px";
+while (pic[i] != null) {
+  pic[i].style.backgroundImage = "url('src/" + pic_array[i] + "')";
+
+  mob_pic[i].style.backgroundImage = "url('src/" + pic_array[i] + "')";
+
   i++;
 }
 
@@ -342,4 +345,4 @@ function liftup() {
 
 function liftdown() {
   pic[0].style.transform = "scale(1)";
-} 
+}

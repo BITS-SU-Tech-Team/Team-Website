@@ -735,6 +735,21 @@ body {
     background-repeat: no-repeat;
   }
 
+  .team-heading {
+    width: 100%;
+    height: 9vh;
+    background-color: #182232;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .team-heading > span {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.5em;
+  }
+
   .team-mobile {
     height: 260vh;
   }

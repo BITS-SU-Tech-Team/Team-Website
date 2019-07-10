@@ -259,6 +259,8 @@ function navbarx() {
     document.getElementsByClassName("sidenavx")[0].style.width = "100vw";
     document.getElementsByClassName("sidenavx")[0].style.height = "100%";
     document.getElementsByClassName("sidenavx")[0].style.opacity = "1";
+    document.getElementsByClassName("sidenavx")[0].style.zIndex = "7";
+
     document.getElementsByClassName("sidenavx")[0].style.borderRadius = "0";
     document.getElementsByClassName("handx")[0].style.transform =
       "rotate(45deg)";
@@ -276,11 +278,14 @@ function navbarx() {
     setTimeout(function() {
       document.getElementsByClassName("sidenavx")[0].style.width = "750px";
       document.getElementsByClassName("sidenavx")[0].style.height = "750px";
+      document.getElementsByClassName("handx")[1].style.zIndex = "-11";
+
       document.getElementsByClassName("sidenavx")[0].style.borderRadius = "50%";
     }, 500);
     document.getElementsByClassName("handx")[0].style.transform =
       "translateY(-1vh) rotate(0deg)";
     document.getElementsByClassName("handx")[1].style.opacity = "1";
+
     document.getElementsByClassName("handx")[2].style.transform =
       "translateY(1vh) rotate(0deg)";
     document.body.style.overflowY = "scroll";
@@ -321,6 +326,8 @@ function closenavx() {
   document.body.style.overflowY = "scroll";
 }
 
+// **************************************-function to add background images-*********************************//
+
 var pic = document.getElementsByClassName("pic");
 var mob_pic = document.getElementsByClassName("mob-pic");
 let pic_array = [
@@ -333,9 +340,7 @@ let pic_array = [
 let i = 0;
 while (pic[i] != null) {
   pic[i].style.backgroundImage = "url('src/" + pic_array[i] + "')";
-
   mob_pic[i].style.backgroundImage = "url('src/" + pic_array[i] + "')";
-
   i++;
 }
 

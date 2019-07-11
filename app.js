@@ -334,7 +334,14 @@ let pic_array = [
   "AbhishekGaur.jpg",
   "MokshGarg.jpg",
   "NayanKhanna.jpg",
-  "RohitKBhardwaj.jpg"
+  "RohitKBhardwaj.jpg",
+  "AarjavJain.jpg",
+  "AyushSingh.jpg",
+  "MukundChoudhary.jpg",
+  "PranavMitan.jpg",
+  "PrateekGarg.jpg",
+  "PrateekGrover.jpg",
+  "RishiGhosh.jpg",
 ];
 
 let i = 0;
